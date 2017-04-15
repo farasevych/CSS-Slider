@@ -57,3 +57,19 @@ body {
 .img3 {
 	background-image: url(img/slide3-bg.jpg);
 }
+
+.controls {
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	margin-left: -55px; /*половина ширины элемента controls*/
+}
+
+.controls > label {
+	display: block;
+	height: 10px;
+	width: 30px;
+	float: left;
+	margin-right: 10px;
+	background-color: #000;
+}
