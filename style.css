@@ -44,6 +44,8 @@ body {
 
 .img {
 	position: absolute;
+	opacity: 0;
+	z-index: 0;
 }
 
 .img1 {
@@ -78,4 +80,11 @@ body {
 
 .controls > label:hover {
 	opacity: 1;
+}
+
+#slide1:checked ~ .slider .img1,
+#slide2:checked ~ .slider .img2,
+#slide3:checked ~ .slider .img3 {
+	opacity: 1;
+	z-index: 1;
 }
