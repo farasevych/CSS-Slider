@@ -38,9 +38,22 @@ body {
 
 .slider {
 	background-color: #000;
+	overflow: hidden;
 	position: relative;
 }
 
 .img {
 	position: absolute;
+}
+
+.img1 {
+	background-image: url(img/slide1-bg.jpg);
+}
+
+.img2 {
+	background-image: url(img/slide2-bg.jpg);
+}
+
+.img3 {
+	background-image: url(img/slide3-bg.jpg);
 }
