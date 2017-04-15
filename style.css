@@ -72,4 +72,5 @@ body {
 	float: left;
 	margin-right: 10px;
 	background-color: #000;
+	cursor: pointer;
 }
