@@ -38,4 +38,9 @@ body {
 
 .slider {
 	background-color: #000;
+	position: relative;
+}
+
+.img {
+	position: absolute;
 }
