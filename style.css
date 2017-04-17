@@ -97,3 +97,36 @@ body {
 	opacity: 1;
 	z-index: 1;
 }
+
+/*стили для кнопок*/
+.side-controls label {
+	position: absolute;
+	display: block;
+	height: 70px;
+	width: 70px;
+	background-color: #fff;
+	cursor: pointer;
+
+
+	z-index: 1;
+	opacity: .2;
+
+}
+
+#slide1:checked ~ .side-controls label:nth-of-type(3),
+#slide3:checked ~ .side-controls label:nth-of-type(2),
+#slide2:checked ~ .side-controls label:nth-of-type(1) {
+	border-left: 10px solid red;
+	bottom: 35px;
+	left: 20%;
+}
+
+#slide1:checked ~ .side-controls label:nth-of-type(2),
+#slide2:checked ~ .side-controls label:nth-of-type(3),
+#slide3:checked ~ .side-controls label:nth-of-type(1) {
+	border-right: 10px solid red;
+	bottom: 35px;
+	left: 25%;
+}
+
+
