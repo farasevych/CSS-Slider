@@ -67,7 +67,7 @@ body {
 	margin-left: -55px; /*половина ширины элемента controls*/
 }
 
-.controls > label {
+.controls label {
 	display: block;
 	height: 10px;
 	width: 30px;
@@ -76,10 +76,18 @@ body {
 	background-color: #000;
 	cursor: pointer;
 	opacity: .2;
+	transition: opacity .5s; /*Добавлет в лейблы плавный переход*/
 }
 
 .controls > label:hover {
-	opacity: 1;
+	opacity: .8;
+}
+
+/* Выделяет лейбл выбранного слайда*/
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	opacity: .8;
 }
 
 #slide1:checked ~ .slider .img1,
